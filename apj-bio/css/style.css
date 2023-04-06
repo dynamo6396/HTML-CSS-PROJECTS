@@ -1,0 +1,65 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    /* border: 2px solid red; */
+    background-color: rgb(229 239 240 / 49%);
+    height: 1300px;
+    width: 1038px;
+    margin: 0px 222px;
+}
+
+/* photo and image  */
+
+.name{
+    /* border: 2px solid red; */
+    display: flex;    
+}
+.name img{
+    height: 300px;
+    width: 300px;
+    margin: 83px 0px 0px 188px;
+    border-radius: 100px;
+}
+.name #content{
+    display: block;
+    /* border: 2px solid blue; */
+    height: 80px;
+    width: 700px;
+    margin: 280px 0px 0px 85px;
+    font-size: 2em;
+}
+.name #content div{
+    margin: 0px 0px 0px 269px;
+}
+
+/* text */
+.about #heading {
+    font-size: 4.3em;
+    margin: 30px 30px 0px 56px;
+}
+.about #text{
+    font-size: 1.5em;
+    margin: 30px 57px 0px 57px;
+}
+/* biography */
+.biography{
+    margin: 30px 0px 50px 57px;
+    font-size: 1.5em;
+}
+.biography p{
+    font-size: 2em;
+}
+.biography ul{
+    margin: 0px 30px;
+}
+/* wikepidia */
+.wikipedia {
+    font-size: 2em;
+    margin: 100px 0px 0px 410px;
+}
+.wikipedia a{
+    text-decoration: none;
+
+}

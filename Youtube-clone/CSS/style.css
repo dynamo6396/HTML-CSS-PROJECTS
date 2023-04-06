@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.5;    
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    height: 100vh;
+}
+header{
+    min-width: 1357px;   
+}
+nav{
+    display: flex;
+    align-items: center;   
+    justify-content: space-between;
+    padding: 13px;
+}
+.logo img{
+    max-width: 100px;
+}
+.center-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.search{
+   display: flex;  
+}
+.search input{
+    height: 40px;
+    min-width: 580px;
+}
+.search button{
+    background-color: rgb(210, 213, 214);
+    border: none;
+    padding: 2.3px;
+}
+.mic{
+    background-color: rgb(215, 222, 219);
+   border-radius: 20px;
+   padding: 8px;
+}
+.side-nav{
+    display: flex;
+    gap: 20px;
+}
+.divider{
+    border: 1px solid rgb(233, 218, 218);
+}
+
+.tags{
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 8px;
+}
+.tagdark{
+    border: 2px solid rgb(50, 47, 47);
+    border-radius: 28px;
+    background-color: rgb(19, 17, 17);
+    color: rgb(222, 212, 212);  
+    padding: 5px 22px;    
+}
+.taglight{
+    border: 2px solid rgb(148 136 136);
+    border-radius: 28px;
+    background-color: rgb(206, 198, 198);
+    color: dark;
+    padding: 5px 22px;
+}
+aside{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    gap: 15px;
+    /* border: 2px solid red; */
+
+}
+.bar{
+    padding-top: 20px;
+    margin-left: -15px;
+}
+.side-icons{
+    display: flex;
+    flex-direction: column;
+}
+i img{
+   margin-left: 35px;
+   margin-top: 8px;
+}
+.side-icons p{
+    padding-left: 25px;
+    margin-bottom: 5px;
+}
+.chutiya{
+    margin-left: -10px;
+}
+
+/* main-section */  
+main{
+    display: flex;
+    flex-direction: column;
+    /* min-height: 100vh; */
+    
+}
+.main-container{
+    min-height: 98vh;
+    background-color: rgb(246 246 246);
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr))
+}
+.bebkuf{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid yellow; */
+    max-width: 500px;
+    max-height: 400px;
+}
+.thumbnail{
+    padding: 8px;
+}
+.thumbnail img{
+    height: 100%;
+    width: 100%;
+}
+.content{
+    display: flex;
+    gap: 33px;
+    /* border: 2px solid blue; */
+    max-width: 490px;
+    /* margin: -10px; */
+    margin-top: -2px;
+   margin-left: 13px;
+}
+.avtar_content{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,225 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body,html{
+       font-family: Arial, Helvetica, sans-serif;
+       font-weight: 300;
+       font-size: 20px;
+       line-height:1.5 ;
+       /* width: 100%;
+       height: 100%; */
+}
+:root{
+    --purple500: #281154;
+    --purple300: #270082;
+    --purple600: #1b0058;
+    --red600: #dc0000;
+    --body: #f9f6ff;
+    --max-width: 1200px;
+}
+button{
+    padding: 10px;
+    border-radius: 20px;
+    transition: 0.2s ease-in-out;
+    border-radius: 20px;
+}
+button:hover{
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+}
+header{
+    background-color:var(--purple300) ;
+    position: sticky;
+    top: 0px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+.container{
+    max-width: 1200px;
+    margin: 0px auto;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;   
+}
+.logo{
+    color: white;
+    font-weight: 600;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+     align-items: center;
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+nav ul li{
+    border-bottom: 2px solid transparent;
+    transition: 0.25s ease-in-out;
+}
+nav ul li:hover{
+    border-bottom: 2px solid white;
+    transition: 0.25s ease-in-out ;
+}
+.hero-section{
+    background-image: url(../IMAGES/hero-image.png)  ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: grid;
+    color: white;
+    text-align: center;
+    place-items: center;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 1000px;
+    flex-wrap: wrap;
+    /* border: 2px solid red; */
+}
+.content h1{
+    font-size: 70px;
+}
+.content h2{
+    font-size: 30px;
+}
+.music-section{
+    background-color: var(--purple500);
+    padding-top: 40px;
+    height: 100vh;
+}
+.music-section .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 30px;
+}
+.primary-button{
+    background-color:var(--red600);
+    color: white;
+}
+.iphon-img{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+}
+.iphon-img img{
+    height: 100%;
+    width: 100%;
+}
+.about-music{
+    /* border: 2px solid red; */
+    margin-top: 380px;
+    padding-top: 50px;
+    display: grid;
+    place-items: center;
+    text-align: center;  
+    gap: 30px;
+}
+.macbook img{
+    height: 100%;
+    width: 100%;
+}
+.secondary-button{
+    background-color: blue;
+    color: white;
+}
+.videocontainer{
+    /* border: 2px solid red; */
+    background-image: url(../IMAGES/video.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    color: white;
+}
+.videocontainer .container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: -100px;
+}
+.giftcard{
+    margin-top: 100px;
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.gift_image img{
+    height: 100%;
+    width: 100%;
+}
+.cont{
+   /* display: grid; */
+   /* border: 2px solid red    ; */
+   display: flex;
+   flex-direction: column;
+   max-width: 500px;
+   gap:20px;
+}
+.divider{
+    border: 2px solid rgb(122, 118, 118);
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color:var(--purple600);
+    color: white;
+    margin-top: 40px;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+   justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.item .divider{
+    border: 2px solid white;
+}
+.item ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+ul li{
+    text-decoration: none;
+}
+@media (max-width:540px) {
+    nav{
+       flex-direction: column;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+   .content h1{
+       font-size: 30px;
+   }
+}
+@media(max-width:812px){
+    .footer{
+        flex-direction: column;
+    }
+}

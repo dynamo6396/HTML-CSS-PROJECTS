@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jatin fitness</title>
+    <style>
+        /* CSS Reset  */
+        body {
+            padding: 0px;
+            margin: -6px;
+            background: url('gym5.jpg');
+            background-attachment: fixed;
+            height: 849px;
+            width: 1524px;
+
+        }
+
+        .left {
+            display: inline;
+            /* border: 2px solid red; */
+            position: absolute;
+            top: 12px;
+            left: 10px;
+        }
+
+        .mid {
+            display: block;
+            width: 31%;
+            position: absolute;
+            top: 1px;
+            margin: 8px 534px;
+            /* border: 2px solid rgb(200, 255, 0); */
+        }
+
+        .right {
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            right: 10px;
+            /* border: 2px solid rgb(55, 255, 0); */
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 15px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            margin: 2px 5px;
+            padding: 5px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a:active {
+            text-decoration: underline;
+            color: grey;
+        }
+
+        .left img {
+            width: 120px;
+            /* for inverting or changing the color of image it is the function of css  */
+            filter: invert();
+        }
+
+        .btn {
+            margin: 0px 9px;
+            padding: 5px;
+            background-color: black;
+            color: white;
+            border: 3px solid #02aa83b7;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            color: aquamarine;
+            background-color: antiquewhite;
+            border: 2px solid red;
+        }
+
+        .continer {
+            position: absolute;
+            left: 0px;
+            top: 201px;
+            /* border: 2px solid blue; */
+            border-radius: 8px;
+            margin: 39px 65px;
+            padding: 14px 10px;
+            width: 49%;
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            width: 42%;
+            border: 3px solid #02aa83b7;
+            margin: 16px auto;
+            font-size: 15px;
+            border-radius: 36px;
+            color: white;
+        }
+
+        .continer h1 {
+            text-align: center;
+            font-size: 27px;
+        }
+
+        .continer button {
+            display: block;
+            margin: auto;
+            width: 135px;
+            border: 3px solid #02aa83b7;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <!-- left box or logo -->
+        <div class="left">
+            <img src="gym logo3.png" alt="" class="src">
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="continer">
+        <h1>Join the best gym of Ghaziabad Now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name=" " placeholder="Enter the name">
+            </div>
+            <div class="form-group">
+                <input type="number" name=" " placeholder="Enter the Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name=" " placeholder="Enter the Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name=" " placeholder="Enter your locality">
+            </div>
+        </form>
+        <button class="btn">Submit</button>
+    </div>
+</body>
+
+</html>

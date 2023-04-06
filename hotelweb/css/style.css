@@ -1,0 +1,227 @@
+/* Css reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* CSS variables */
+:root {
+    --navbar-height: 59px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 0px;
+    height: 613px;
+    width: 100vw;
+}
+.container::before {
+    content: "";
+    background: url('../img/backfood1.jpg') no-repeat center center/cover;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100vw;
+    opacity: 0.9;
+    z-index: -1;
+}
+/* Navigation bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+/* Navigation bar: Logo and image */
+#logo {
+    margin: 1px 1px;
+}
+
+#logo img {
+    height: 96px;
+}
+
+/* Navigation bar: list styling  */
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: white;
+    padding: 3px 22px;
+    margin: 40px 14px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover {
+    color: rgb(220, 27, 200);
+    background-color:cyan;
+}
+/* Home section  */
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
+}
+#home h1{
+    color: white;
+    font-size: 2.8rem;
+    font-family: 'Comforter', cursive;
+    padding: 12px;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: 'Comforter', cursive;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: #00daff47;
+    margin: 13px 0px;
+    border-radius: 9px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: cyan;
+    color: bisque;
+}
+/* Our services sections  */
+.h-primary-center{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-family: 'Comforter', cursive;
+    font-size: 50px;
+    position: static;
+}
+#services{
+    display: flex;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    margin: 10px 5px;
+    border: 2px solid red;
+    border-radius: 56px;
+    background-color: #dae4e2;
+    position: static;
+}
+.box img{
+    height: 229px;
+    width: 292px;
+    padding: 35px;
+    margin: auto;
+}
+.h-secondary-center{
+    margin: 7px auto;
+    padding: 5px 3px;
+    font-family: 'Comforter', cursive;
+}
+.center{
+    margin: 10px auto;
+    padding: 3px 35px;
+    font-family: 'Comforter', cursive;
+}
+/* Our client section  */
+#client-section{
+    position: relative;
+    left: 0px;
+    top:0px;
+}
+#client-section::before{
+    content: "";
+    background: url('../img/background2.png') no-repeat center center/cover;
+    position: absolute;
+    left: 0px;
+    top:0px;
+    height: 105%;
+    width: 100%;
+    opacity: 0.9;
+    z-index: -1;
+}
+.h-center {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    margin: -11px 19px ;
+    font-family: 'Comforter', cursive;
+    font-size: 50px;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+.client-item {
+    display: flex;
+    margin: 30px;
+}
+.client-item img{
+    height: 150px;
+    width: 150px;
+}
+/* footer  */
+.foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    height: 25px;
+}
+
+/* Contact Us  */
+#contact{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+#contact::before{
+    content: "";
+    background: url('../img/imagelast.webp') no-repeat center center/cover;
+    position: absolute;
+    left: 0px;
+    top:0px;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    z-index: -1;
+
+}
+.contact-box{
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid red; */
+    justify-content: center;
+}
+.form-group{
+    display: flex;
+    margin: 10px;
+    font-family: 'Comforter', cursive;
+    color: rgb(3, 255, 87);
+
+}
+.contact-box input,.contact-box textarea{
+    padding: 5px;
+    border: 2px solid rgb(212, 39, 39);
+}
+.contact-box label{
+    font-size: 1.3rem;
+}

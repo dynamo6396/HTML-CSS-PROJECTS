@@ -1,0 +1,61 @@
+html,body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.imag1{
+    /* background: url(../IMAGES/image1.png) no-repeat center center/cover; */
+    min-height: 100%;
+    background-image: url(../IMAGES/image1.png);  
+}
+.imag2{
+    min-height: 400px;
+    background-image: url(../IMAGES/image2.png);
+}
+.imag3{
+    min-height: 400px;
+    background-image: url(../IMAGES/image3.png);
+}
+.imag1,.imag2,.imag3{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    opacity: 0.9;
+    /* z-index: -1; */
+}
+.text{
+   position: absolute;
+   top: 50%;
+   /* left: 50%; it is also write  */
+   width: 100%;
+   text-align: center;
+   color: black;
+   font-size: 30px;
+   text-transform: uppercase;
+   letter-spacing: 10px
+}
+.textbeg{
+    background-color: rgb(75, 70, 70);
+    padding: 20px;
+    color: white;
+}
+.after{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 30px 80px;
+    height: 300px;
+}
+.dark{
+    background-color: #2f2b2b;
+    color: white;
+}
+.light{
+    background-color: #f0f5f09c;
+    color: #191818    
+}
